@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <scenes>
+        <!--Balance View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="BalanceViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lpb-y6-lPu"/>
+                        <viewControllerLayoutGuide type="bottom" id="QFR-yf-NBS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default.png" translatesAutoresizingMaskIntoConstraints="NO" id="uCw-ce-vgl">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ball.png" translatesAutoresizingMaskIntoConstraints="NO" id="kPx-Vk-u7r">
+                                <rect key="frame" x="93" y="217" width="134" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Frame-Flashed.png" translatesAutoresizingMaskIntoConstraints="NO" id="PoH-RG-Nbu">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="kPx-Vk-u7r" secondAttribute="centerY" id="42W-fI-cL8"/>
+                            <constraint firstItem="QFR-yf-NBS" firstAttribute="top" secondItem="PoH-RG-Nbu" secondAttribute="bottom" id="5WR-rf-67v"/>
+                            <constraint firstAttribute="centerX" secondItem="PoH-RG-Nbu" secondAttribute="centerX" id="9eV-4E-a9b"/>
+                            <constraint firstAttribute="centerY" secondItem="PoH-RG-Nbu" secondAttribute="centerY" id="Ts9-fe-DbN"/>
+                            <constraint firstAttribute="centerY" secondItem="uCw-ce-vgl" secondAttribute="centerY" id="XA7-GP-gya"/>
+                            <constraint firstItem="QFR-yf-NBS" firstAttribute="top" secondItem="uCw-ce-vgl" secondAttribute="bottom" id="aV9-Te-mND"/>
+                            <constraint firstAttribute="centerX" secondItem="uCw-ce-vgl" secondAttribute="centerX" id="e9r-3E-FsJ"/>
+                            <constraint firstAttribute="centerX" secondItem="kPx-Vk-u7r" secondAttribute="centerX" id="hbr-bi-qxU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ball" destination="kPx-Vk-u7r" id="Zca-kV-3e0"/>
+                        <outlet property="flash" destination="PoH-RG-Nbu" id="EGB-xf-hpW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="143" y="97"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Ball.png" width="134" height="134"/>
+        <image name="Default.png" width="320" height="480"/>
+        <image name="Frame-Flashed.png" width="320" height="480"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

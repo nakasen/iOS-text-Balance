@@ -1,4 +1,4 @@
-iOS-text-Balance
-================
+iOS-text
+========
 
-iOS-text sample code (Balance App).
+iOS-text sample code.
